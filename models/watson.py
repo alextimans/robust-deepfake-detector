@@ -236,16 +236,4 @@ class Watson(nn.Module):
         return probs
 
 """
-"""
-COMMENTS
-- residual/skip connections: model may not be deep enough for real benefits
-- batch normalization: faster training, better backprop
-- two fully connected layers: better feature mixing but way more params
-- more convolutions/more depth: wider receptive field
-
-when using batch norm:
-    - don't mix with dropout
-    - use larger learning rate, accelerate learning rate decay
-    - can both be applied before and after activation, but more common before
-"""
 
